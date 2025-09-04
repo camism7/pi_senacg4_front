@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Psychological Care Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Projeto PI Senac GP04
+Repositórios do frontend e backend do projeto PI Senac GP04.
 
-## Available Scripts
+## Descrição
+O **Psychological Care Management App** é uma aplicação desenvolvida para facilitar o gerenciamento de atendimentos psicológicos. Desta forma, democratizando o acesso a serviços de saúde mental, como sessões de terapia e psicologia, oferecendo uma plataforma que simplifica o agendamento de atendimentos psicológicos e terapêuticos, promovendo a educação em saúde mental e incentivando o bem-estar integral dos usuários.
 
-In the project directory, you can run:
+## Funcionalidades
+- **Agendamento de Consultas:** Permite marcar, visualizar e gerenciar consultas.
+- **Gerenciamento de Pacientes:** Armazena informações detalhadas dos pacientes, incluindo histórico de consultas e anotações.
+- **Notificações e Lembretes**: Envia lembretes automáticos para consultas agendadas.
+- **Relatórios e Análises**: Gera relatórios sobre o progresso dos pacientes e a eficácia dos tratamentos.
+- **Segurança de Dados**: Utiliza criptografia para garantir a segurança e a privacidade das informações dos pacientes.
 
-### `npm start`
+## Tecnologias Utilizadas
+### Frontend
+- React.js
+- JavaScript
+- CSS
+- HTML
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend
+- Node.js
+- Express.js
+- MongoDB (ou outro banco de dados utilizado)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Como Executar o Projeto
 
-### `npm test`
+### Pré-requisitos
+Certifique-se de ter instalado em sua máquina:
+- [Node.js](https://nodejs.org/) (versão recomendada: LTS)
+- [Git](https://git-scm.com/)
+- [MongoDB](https://www.mongodb.com/) (caso esteja utilizando MongoDB localmente)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Passo a Passo
+#### Clonar os repositórios
+1. **Clonar o repositório do frontend:**
+   ```sh
+   git clone https://github.com/camism7/pi_senacg4_front.git
+   ```
+2. **Clonar o repositório do backend:**
+   ```sh
+   git clone https://github.com/camism7/pi_senacg4_back.git
+   ```
 
-### `npm run build`
+#### Executar o Frontend
+3. **Acessar o diretório do frontend:**
+   ```sh
+   cd pi_senacg4_front
+   ```
+4. **Instalar as dependências:**
+   ```sh
+   npm install
+   npm install react-router-dom axios bootstrap
+   npm install jwt-decode
+   ```
+5. **Executar o frontend:**
+   ```sh
+   npm start
+   ```
+6. O frontend estará disponível em `http://localhost:3000/`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Executar o Backend
+7. **Acessar o diretório do backend:**
+   ```sh
+   cd ../pi_senacg4_back
+   ```
+8. **Instalar as dependências:**
+   ```sh
+   npm install express cors mongoose dotenv
+   npm install nodemon --save-dev
+   ```
+9. **Configurar variáveis de ambiente:**
+   - Criar um arquivo `.env` na raiz do backend e adicionar as configurações necessárias, por exemplo:
+     ```env
+     PORT=8080
+     MONGO_URI=mongodb://localhost:27017/seu_banco
+     JWT_SECRET=sua_chave_secreta
+     ```
+10. **Executar o backend:**
+    ```sh
+     npx nodemon server.js
+    ```
+11. O backend estará disponível em `http://localhost:8080/`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Conectando o Frontend com o Backend
+Caso o backend esteja rodando em uma porta diferente, atualize as configurações do frontend para apontar corretamente para a API.
+Baixe e utilize o MongoDB Compass para exibir uma interface gráfica que facilita a interação com o banco de dados.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Projeto integrador feito por alunos do CENTRO UNIVERSITÁRIO SENAC:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Integrantes do grupo:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+André Noronha Ribeiro
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Camila Soler Marconi
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Lohanne Tiffany de Carvalho
 
-## Learn More
+Milson Barbosa da Silva
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Túlio Henrique de Araujo
