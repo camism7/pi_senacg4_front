@@ -1,0 +1,713 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* PÁGINA TODA */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #6c63ff;
+}
+
+/* CSS DA NAVBAR */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #6c63ff;
+  color: #fff;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.navbar-logo {
+  max-width: 120px;
+  border-radius: 20px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* CSS TELA HOME */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #6c63ff;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.home-image {
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+/* Botões */
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.home-buttons button {
+  font-weight: 900;
+  text-transform: uppercase;
+  max-width: 360px;
+  width: 31%;
+  height: 100px;
+  padding: 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 5px 5px 0 1px #57f287;
+}
+
+/*Estilo da tela de Menu de Usuários*/
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container li {
+  margin-bottom: 15px;
+}
+
+.container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.container a:hover {
+  background-color: #4a45a3;
+}
+
+/* Estilos para MeusAgendamentos */
+.meus-agendamentos-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meus-agendamentos-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.meus-agendamentos-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.meus-agendamentos-container li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #555;
+}
+
+.meus-agendamentos-container li:last-child {
+  border-bottom: none;
+}
+
+.meus-agendamentos-container p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Estilos para Agendamentos */
+.agendamentos-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agendamentos-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.agendamentos-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.agendamentos-container label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.agendamentos-container input[type="date"],
+.agendamentos-container input[type="time"],
+.agendamentos-container select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.agendamentos-container button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.agendamentos-container button:hover {
+  background-color: #4a45a3;
+}
+
+/* CSS TELA REGISTER */
+.body-cadastro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c0ce94d;
+}
+
+.container-cadastro {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image-cadastro {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: #fde3a7a7;
+  padding: 1rem;
+}
+
+.form-image-cadastro {
+  width: 40rem;
+}
+
+.form-cadastro {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.form-header-cadastro {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-header-cadastro h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3 rem;
+  background-color: #6c63ff;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-group-cadastro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box-cadastro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box-cadastro input {
+  margin: 0.6 rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box-cadastro input:hover {
+  background-color: #4f4b4b75;
+}
+
+.input-box-cadastro input:focus-visible {
+  outline: 1px solid #6c63ff;
+}
+
+.input-box-cadastro label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.input-box-cadastro input::placeholder {
+  color: #000000be;
+}
+
+.gender-group-cadastro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5 rem;
+}
+
+.gender-input-cadastro {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input-cadastro input {
+  margin-right: 0.35 rem;
+}
+
+.gender-input-cadastro label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.continue-button-cadastro button {
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: #6c63ff;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button-cadastro button:hover {
+  background-color: #46464e;
+}
+
+.continue-button-cadastro button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.continue-button-cadastro p {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  align-items: center;
+}
+
+/* Responsividade da Navbar */
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #6c63ff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-menu a,
+  .navbar-menu button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/* RESPONSIVIDADE HOME */
+@media (max-width: 1024px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image {
+    max-width: 90%;
+  }
+
+  .home-buttons button {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-buttons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 24px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+  }
+
+  .home-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .secao-inicio-nav {
+    padding: 20px 50px 100px 20px;
+    gap: 110px;
+  }
+
+  .secao-inicio-nav main {
+    max-width: none;
+  }
+  .secao-inicio-nav main > div p {
+    font: 700 14px/22px "noto sans";
+  }
+  .secao-inicio-nav .botoes button {
+    max-width: unset;
+  }
+  .secao-inicio-nav .botoes button {
+    width: calc(50% - 20px);
+    max-width: unset;
+    font: 900 16px/22px "noto sans";
+  }
+  .secao-inicio-nav header nav {
+    display: none;
+  }
+  .secao-inicio-nav main > img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .form-image-cadastro {
+    display: none;
+  }
+
+  .container-cadastro {
+    width: 50%;
+  }
+
+  .form-cadastro {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .container-cadastro {
+    width: 90%;
+    height: auto;
+  }
+  .input-group-cadastro {
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    max-height: 10rem;
+    padding-right: 5rem;
+  }
+  .gender-group-cadastro {
+    flex-direction: column;
+  }
+  .gender-input-cadastro {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .secao-inicio-nav-menudrop {
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 10rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .body-cadastro {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container-cadastro {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .form-cadastro {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .form-header-cadastro {
+    text-align: center;
+  }
+
+  .input-group-cadastro {
+    flex-direction: column;
+    max-height: none;
+    padding-right: 0;
+  }
+
+  .input-box-cadastro {
+    width: 100%;
+  }
+
+  .continue-button-cadastro {
+    text-align: center;
+  }
+
+  .continue-button-cadastro button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-header-cadastro h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-box-cadastro input {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .continue-button-cadastro button {
+    font-size: 1rem;
+  }
+}
+
+/*Media query do Menu de Usuário (responsivo)*/
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  .container h2 {
+    font-size: 20px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .container a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container a {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+
+/* Media queries para MeusAgendamentos (responsivo) */
+@media (max-width: 768px) {
+  .meus-agendamentos-container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  .meus-agendamentos-container h2 {
+    font-size: 20px;
+  }
+
+  .meus-agendamentos-container li {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .meus-agendamentos-container p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .meus-agendamentos-container {
+    padding: 10px;
+  }
+
+  .meus-agendamentos-container li {
+    padding: 8px;
+  }
+}
+
+/* Media queries para Agendamentos (responsivo)*/
+@media (max-width: 768px) {
+  .agendamentos-container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  .agendamentos-container h2 {
+    font-size: 20px;
+  }
+
+  .agendamentos-container input[type="date"],
+  .agendamentos-container input[type="time"],
+  .agendamentos-container select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .agendamentos-container button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .agendamentos-container {
+    padding: 10px;
+  }
+
+  .agendamentos-container input[type="date"],
+  .agendamentos-container input[type="time"],
+  .agendamentos-container select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .agendamentos-container button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+
+UserMenu.js
+
+import React from "react";
+import { Link } from "react-router-dom";
+
+function UserMenu() {
+  return (
+    <div className="container">
+      <h2>Bem-vindo ao seu Menu</h2>
+      <p>Escolha uma opção abaixo:</p>
+      <ul>
+        <li>
+          <Link to="/agendamentos">Agendar Consulta</Link>
+        </li>
+        <li>
+          <Link to="/meus-agendamentos">Meus Agendamentos</Link>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+export default UserMenu;
